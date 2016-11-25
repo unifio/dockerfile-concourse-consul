@@ -22,7 +22,7 @@ test:
 
 deployment:
   hub:
-    branch: master
+    branch: add-envconsul
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker tag -f `docker images | grep -E 'unifio/concourse-consul' | awk '{print $3}'` unifio/concourse-consul:${CONCOURSE_VERSION}
