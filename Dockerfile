@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 LABEL org.opencontainers.image.authors="Unif.io, Inc. <support@unif.io>"
-
+LABEL org.opencontainers.image.source="https://github.com/unifio/dockerfile-concourse-consul"
 VOLUME /concourse-keys
 ENV CONCOURSE_TSA_PUBLIC_KEY          /concourse-keys/tsa_host_key_pub
 ENV CONCOURSE_TSA_HOST_KEY            /concourse-keys/tsa_host_key
